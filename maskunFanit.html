@@ -3,55 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Maskun nähtävyydet</title>
+	<link rel="stylesheet" type="text/css" href="tyylit.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-<style>
-* { box-sizing:border-box; }
-#header h1,#footer h3 {
-	border: solid 1px black;
-	margin:25px;
-	padding:15px;
-	background-color:white;
-}
-#header, #footer {
-	border:dashed 1px; 
-	background-color:red;
-}
-#menu, #content, #clearfix {
-	border: solid 0px;
-}
-img {
-padding:10px;
-width:200px;
-float:right;
-}
-#menu {
-	float:left;
-	width:25%;
-}
-#content {
-	float:left;
-	width:75%;
-}
-#clearfix {
-content:"";
-clear:both;
-display:table;
-}
-#menu ul{
-	list-style-type:none;
-	padding-left:0px;
-}
-#menu li {
-	background-color:#C5A149;
-	color:red;
-	padding:5px;
-	margin:5px;
-}
-#menu li:hover {
-	background-color:#CFCFCF;
-	color:#C5A149;
-}
-</style>
 <body>
 <div id="header"> 
 	<h1>Maskun fanit</h1>
@@ -64,9 +18,16 @@ display:table;
 			<li>Vaakuna</li>
 			<li>Riviera</li>
 			<li>Joki</li>
+			<li id="hese">Hesburger</li>
 		</ul>
+		<img id="shrek" style="100px;display:none" src="shrek.jpg">
 	</div>
 	<div id="content">
+<audio controls>
+  <source src="hopeatorvet.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
 		<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Askainen.vaakuna.svg">
 		<p><h3>Ritaripuisto</h3> sijaitsee Suomen marsalkka Mannerheimin syntymäkotina tunnetun Louhisaaren kartanon läheisyydessä, Askaisten kirkon vierellä Ritaripuisto on perustettu Mannerheim-ristin ritarien sekä suomalaisten sotaveteraanien kunniaksi. Puiston keskustassa on ritariristin muotoon hakattu kunniakivi ja jokaisella Mannerheim-ristin saaneella ritarilla on puistossa oma muistokivensä. Puisto perustettiin Askaisten kunnanjohtajan Pekka Määttäsen aloitteesta. Arkkitehti Bey Hengin suunnitteleman aluekokonaisuuden pinta-ala on n. 3400 neliömetriä. Alueen rakennustyöt aloitettiin syyskuussa 2006 ja ne toteutettiin Museoviraston ohjein sekä valvonnassa. Puisto toteutettiin kymmenien yritysten ja satojen yksityishenkilöiden tuella. Ritaripuiston avajaiset olivat 2. kesäkuuta 2007, josta lähtien vuosijuhlaa on vietetty Mannerheimin syntymäpäivää (4. kesäkuuta) seuraavana lauantaina. </p>
 	</div>
@@ -76,4 +37,11 @@ display:table;
 	<h3>&copy; TiVi-17K</h3>
 </div> <!-- footer loppuu -->
 </body>
+<script>
+$("#hese").click( function() {
+$("#hese").html("This is my swamp now!");
+$("#shrek").fadeIn(3000);
+}
+);
+</script>
 </html>
