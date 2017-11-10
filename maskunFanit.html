@@ -32,27 +32,43 @@ float:right;
 	float:left;
 	width:75%;
 }
-<!-- 
-https://github.com/hartoi/htmlApu/   
--->
+#clearfix {
+content:"";
+clear:both;
+display:table;
+}
+#menu ul{
+	list-style-type:none;
+	padding-left:0px;
+}
+#menu li {
+	background-color:#C5A149;
+	color:red;
+	padding:5px;
+	margin:5px;
+}
+#menu li:hover {
+	background-color:#CFCFCF;
+	color:#C5A149;
+}
 </style>
 <body>
 <div id="header"> 
 	<h1>Maskun fanit</h1>
 </div> <!-- header loppuu -->
 <div id="clearfix">
-	<div id="menu">#menu
+	<div id="menu">
 		<ul>
-			<li>Ritaripuisto</li>
-			<li>Kirkko</li>
+			<a href="ritaripuisto.html"><li>Ritaripuisto</li></a>
+			<a href="kirkko.html"><li>Kirkko</li></a>
 			<li>Vaakuna</li>
 			<li>Riviera</li>
 			<li>Joki</li>
 		</ul>
 	</div>
-	<div id="content">#content
-	<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Askainen.vaakuna.svg">
-	<p><h3>Ritaripuisto</h3> sijaitsee Suomen marsalkka Mannerheimin syntymäkotina tunnetun Louhisaaren kartanon läheisyydessä, Askaisten kirkon vierellä Ritaripuisto on perustettu Mannerheim-ristin ritarien sekä suomalaisten sotaveteraanien kunniaksi. Puiston keskustassa on ritariristin muotoon hakattu kunniakivi ja jokaisella Mannerheim-ristin saaneella ritarilla on puistossa oma muistokivensä. Puisto perustettiin Askaisten kunnanjohtajan Pekka Määttäsen aloitteesta. Arkkitehti Bey Hengin suunnitteleman aluekokonaisuuden pinta-ala on n. 3400 neliömetriä. Alueen rakennustyöt aloitettiin syyskuussa 2006 ja ne toteutettiin Museoviraston ohjein sekä valvonnassa. Puisto toteutettiin kymmenien yritysten ja satojen yksityishenkilöiden tuella. Ritaripuiston avajaiset olivat 2. kesäkuuta 2007, josta lähtien vuosijuhlaa on vietetty Mannerheimin syntymäpäivää (4. kesäkuuta) seuraavana lauantaina. </p>
+	<div id="content">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Askainen.vaakuna.svg">
+		<p><h3>Ritaripuisto</h3> sijaitsee Suomen marsalkka Mannerheimin syntymäkotina tunnetun Louhisaaren kartanon läheisyydessä, Askaisten kirkon vierellä Ritaripuisto on perustettu Mannerheim-ristin ritarien sekä suomalaisten sotaveteraanien kunniaksi. Puiston keskustassa on ritariristin muotoon hakattu kunniakivi ja jokaisella Mannerheim-ristin saaneella ritarilla on puistossa oma muistokivensä. Puisto perustettiin Askaisten kunnanjohtajan Pekka Määttäsen aloitteesta. Arkkitehti Bey Hengin suunnitteleman aluekokonaisuuden pinta-ala on n. 3400 neliömetriä. Alueen rakennustyöt aloitettiin syyskuussa 2006 ja ne toteutettiin Museoviraston ohjein sekä valvonnassa. Puisto toteutettiin kymmenien yritysten ja satojen yksityishenkilöiden tuella. Ritaripuiston avajaiset olivat 2. kesäkuuta 2007, josta lähtien vuosijuhlaa on vietetty Mannerheimin syntymäpäivää (4. kesäkuuta) seuraavana lauantaina. </p>
 	</div>
 </div> <!-- clearfix loppuu -->
 
