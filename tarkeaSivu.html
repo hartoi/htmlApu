@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<style>
+body {
+	background-color:pink;
+}
+h1 {
+	background-color:red;
+	border: solid 2 px blue;
+	margin: 10px;
+	padding 25px;
+}
+div {
+	background-color:yellow;
+	border: solid 2 px red;
+	display:none;
+	padding:100px;
+}
+#content {
+display:block;
+background-color:gold;
+border: solid 2px red;
+padding:0px;
+}
+
+#content:after {
+clear:both;
+content:"";
+display:table;
+
+}
+
+img{
+width:50%;
+float:right;
+}
+
+
+
+</style>
+</head>
+<body>
+<h1>Maailman hyödyllisin sivu</h1>
+<div id="content">
+<h3>Googlatkaa clearfix</h3>
+<p><img src="https://cdn-flex0.heartyhosting.com/sites/flexonline.com/files/14flex_arnold_arnold-collection_970.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</div>
+<br>
+<button id="fadeIn1">FadeIn1</button>
+<button id="fadeIn2">FadeIn2</button>
+<button id="fadeOut">FadeOut</button>
+<div id="kentta1">Suomi on pian sata vuotta!</div>
+<div id="kentta2">Venäjä on pian 26 vuotta. </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$("#fadeIn1").click(function() {
+$("#kentta1").fadeIn(1000);
+} );
+
+$("#fadeIn2").click(function() {
+$("#kentta2").fadeIn(1000);
+} );
+
+$("#fadeOut").click(function() {
+$("#kentta1").fadeOut(1000);
+$("#kentta2").fadeOut(1000);
+
+} );
+
+</script>
+</html>
